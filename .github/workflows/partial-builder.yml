@@ -50,7 +50,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            hkotel/mealie:${{ inputs.tag }}
+            atommasi/arcane-recipes:${{ inputs.tag }}
             ghcr.io/${{ github.repository }}:${{ inputs.tag }}
             ${{ inputs.tags }}
           build-args: |
