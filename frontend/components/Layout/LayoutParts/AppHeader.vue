@@ -8,7 +8,7 @@
     </router-link>
 
     <div btn class="pl-2">
-      <v-toolbar-title style="cursor: pointer" @click="$router.push(routerLink)"> Mealie </v-toolbar-title>
+      <v-toolbar-title style="cursor: pointer" @click="$router.push(routerLink)"> Arcane Recipes </v-toolbar-title>
     </div>
     <RecipeDialogSearch ref="domSearchDialog" />
 
@@ -17,19 +17,9 @@
     <!-- Navigation Menu -->
     <template v-if="menu">
       <div v-if="!$vuetify.breakpoint.xs" style="max-width: 500px" @click="activateSearch">
-        <v-text-field
-          readonly
-          class="mt-6 rounded-xl"
-          rounded
-          dark
-          solo
-          dense
-          flat
-          :prepend-inner-icon="$globals.icons.search"
-          background-color="primary darken-1"
-          color="white"
-          :placeholder="$t('search.search-hint')"
-        >
+        <v-text-field readonly class="mt-6 rounded-xl" rounded dark solo dense flat
+          :prepend-inner-icon="$globals.icons.search" background-color="primary darken-1" color="white"
+          :placeholder="$t('search.search-hint')">
         </v-text-field>
       </div>
       <v-btn v-else icon @click="activateSearch">
