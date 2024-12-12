@@ -40,20 +40,27 @@ jobs:
       - name: Override __init__.py
         run: |
           echo "__version__ = \"${{ inputs.tag }}\"" > ./mealie/__init__.py
-
-      - uses: depot/setup-action@v1
-
-      - name: Build and push Docker image, via Depot.dev
-        uses: depot/build-push-action@v1
+    
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
-          project: srzjb6mhzm
-          file: ./docker/Dockerfile
+          images: |
+            atommasi/arcane-recipes
+            ghcr.io/${{ github.repository }}
+
+      - name: Build and push Docker images
+        id: push
+        uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
+        with:
           context: .
-          platforms: linux/amd64,linux/arm64
           push: true
-          tags: |
-            atommasi/arcane-recipes:${{ inputs.tag }}
-            ghcr.io/${{ github.repository }}:${{ inputs.tag }}
-            ${{ inputs.tags }}
-          build-args: |
-            COMMIT=${{ github.sha }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Generate artifact attestation
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
+          subject-digest: ${{ steps.push.outputs.digest }}
+          push-to-registry: true
