@@ -116,7 +116,7 @@ export default defineComponent({
       {
         icon: $globals.icons.heart,
         title: i18n.tc("about.support"),
-        href: "https://github.com/sponsors/hay-kot",
+        href: "https://github.com/sponsors/atommasi",
         restricted: true,
       },
     ];
