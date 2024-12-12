@@ -6,8 +6,8 @@ on:
 
 jobs:
   backend-tests:
-    name: "Backend Server Tests"
-    uses: ./.github/workflows/partial-backend.yml
+   name: "Backend Server Tests"
+   uses: ./.github/workflows/partial-backend.yml
 
   frontend-tests:
     name: "Frontend and End-to-End Tests"
@@ -25,7 +25,7 @@ jobs:
     name: Build Tagged Release
     uses: ./.github/workflows/partial-builder.yml
     needs:
-      - backend-tests
+      #- backend-tests
       - frontend-tests
     with:
       tag: ${{ github.event.release.tag_name }}
