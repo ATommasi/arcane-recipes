@@ -117,12 +117,15 @@ export default defineComponent({
         icon: $globals.icons.heart,
         title: i18n.tc("about.support"),
         href: "https://github.com/sponsors/atommasi",
+<<<<<<< HEAD
         restricted: true,
       },
       {
         icon: $globals.icons.slotMachine,
         title: i18n.tc("about.arcanetech"),
         href: "https://arcanetechsolutions.com/",
+=======
+>>>>>>> 2236945ae07b2c7129bf77ced77f307e3d8a5586
         restricted: true,
       },
     ];

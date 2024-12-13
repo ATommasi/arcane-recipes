@@ -1,7 +1,7 @@
 {
   "about": {
     "about": "About",
-    "about-Arcane Recipes": "About Arcane Recipes",
+    "about-mealie": "About Arcane Recipes",
     "api-docs": "API Docs",
     "api-port": "API Port",
     "application-mode": "Application Mode",
@@ -58,7 +58,7 @@
     "event-delete-confirmation": "Are you sure you want to delete this event?",
     "event-deleted": "Event Deleted",
     "event-updated": "Event Updated",
-    "new-notification-form-description": "Arcane Recpies uses the Apprise library to generate notifications. They offer many options for services to use for notifications. Refer to their wiki for a comprehensive guide on how to create the URL for your service. If available, selecting the type of your notification may include extra features.",
+    "new-notification-form-description": "Arcane Recipes uses the Apprise library to generate notifications. They offer many options for services to use for notifications. Refer to their wiki for a comprehensive guide on how to create the URL for your service. If available, selecting the type of your notification may include extra features.",
     "new-version": "New version available!",
     "notification": "Notification",
     "refresh": "Refresh",
@@ -399,8 +399,8 @@
       "title": "Tandoor Recipes"
     },
     "recipe-data-migrations": "Recipe Data Migrations",
-    "recipe-data-migrations-explanation": "Recipes can be migrated from another supported application to Arcane Recipes. This is a great way to get started with Arcane Recipes.",
-    "coming-from-another-application-or-an-even-older-version-of-Arcane Recipes": "Coming from another application or an even older version of Arcane Recipes? Check out migrations and see if your data can be imported.",
+    "recipe-data-migrations-explanation": "Recipes can be migrated from another supported application to Arcane Recipes. This is a great way to get started with Mealie.",
+    "coming-from-another-application-or-an-even-older-version-of-mealie": "Coming from another application or an even older version of Arcane Recipes? Check out migrations and see if your data can be imported.",
     "choose-migration-type": "Choose Migration Type",
     "tag-all-recipes": "Tag all recipes with {tag-name} tag",
     "nextcloud-text": "Nextcloud recipes can be imported from a zip file that contains the data stored in Nextcloud. See the example folder structure below to ensure your recipes are able to be imported.",
@@ -629,7 +629,7 @@
     "import-from-html-or-json-description": "Import a single recipe from raw HTML or JSON. This is useful if you have a recipe from a site that Arcane Recipes can't scrape normally, or from some other external source.",
     "json-import-format-description-colon": "To import via JSON, it must be in valid format:",
     "json-editor": "JSON Editor",
-    "zip-files-must-have-been-exported-from-Arcane Recipes": ".zip files must have been exported from Arcane Recipes",
+    "zip-files-must-have-been-exported-from-mealie": ".zip files must have been exported from Arcane Recipes",
     "create-a-recipe-by-uploading-a-scan": "Create a recipe by uploading a scan.",
     "upload-a-png-image-from-a-recipe-book": "Upload a png image from a recipe book",
     "recipe-bulk-importer": "Recipe Bulk Importer",
@@ -701,7 +701,7 @@
     "clear-selection": "Clear Selection",
     "results": "Results",
     "search": "Search",
-    "search-Arcane Recipes": "Search Arcane Recipes (press /)",
+    "search-mealie": "Search Arcane Recipes (press /)",
     "search-placeholder": "Search...",
     "tag-filter": "Tag Filter",
     "search-hint": "Press '/'",
@@ -924,7 +924,7 @@
     "sign-up-links": "Sign Up Links",
     "sign-up-token-deleted": "Sign Up Token Deleted",
     "sign-up-token-deletion-failed": "Sign up token deletion failed",
-    "welcome-to-Arcane Recipes": "Welcome to Arcane Recipes! To become a user of this instance you are required to have a valid invitation link. If you haven't recieved an invitation you are unable to sign-up. To recieve a link, contact the sites administrator."
+    "welcome-to-mealie": "Welcome to Arcane Recipes! To become a user of this instance you are required to have a valid invitation link. If you haven't recieved an invitation you are unable to sign-up. To recieve a link, contact the sites administrator."
   },
   "tag": {
     "tag-created": "Tag created",
@@ -1290,7 +1290,7 @@
       "already-set-up-bring-to-homepage": "I'm already set up, just bring me to the homepage",
       "common-settings-for-new-sites": "Here are some common settings for new sites",
       "setup-complete": "Setup Complete!",
-      "here-are-a-few-things-to-help-you-get-started": "Here are a few things to help you get started with Arcane Recipes",
+      "here-are-a-few-things-to-help-you-get-started": "Here are a few things to help you get started with Mealie",
       "restore-from-v1-backup": "Have a backup from a previous instance of Arcane Recipes v1? You can restore it here.",
       "manage-profile-or-get-invite-link": "Manage your own profile, or grab an invite link to share with others."
     },

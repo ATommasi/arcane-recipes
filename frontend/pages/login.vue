@@ -21,7 +21,7 @@
     </v-alert>
     <v-card tag="section" class="d-flex flex-column align-center" width="600px">
       <v-toolbar width="100%" color="primary" class="d-flex justify-center mb-4" dark>
-        <v-toolbar-title class="headline text-h4"> Mealie </v-toolbar-title>
+        <v-toolbar-title class="headline text-h4"> Arcane Recipes</v-toolbar-title>
       </v-toolbar>
 
       <div class="icon-container">
@@ -104,12 +104,12 @@
             {
               text: $t('about.sponsor'),
               icon: $globals.icons.heart,
-              href: 'https://github.com/sponsors/hay-kot',
+              href: 'https://github.com/sponsors/atommasi',
             },
             {
               text: $t('about.github'),
               icon: $globals.icons.github,
-              href: 'https://github.com/hay-kot/mealie',
+              href: 'https://github.com/atommasi/arcane-recipes',
             },
             {
               text: $t('about.docs'),

@@ -26,7 +26,7 @@
     },
     {
       "label": "Dev: Start Frontend",
-      "command": "task ui",
+      "command": "task ui",~
       "type": "shell",
       "presentation": {
         "reveal": "always",
